@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Anos do Nosso Amor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #FAD4E4, #E5C7F5, #A7DFF4);
+            color: #4A4A4A;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            color: #FFF;
+            font-size: 2.5rem;
+            margin: 20px 0;
+            background-color: #A459D1;
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            box-shadow: 0 0 15px #FFC7E6, 0 0 30px #A459D1, 0 0 45px #FFC7E6;
+            animation: pulse 2s infinite, fade-in 2s ease-in-out;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        .text-box {
+            background-color: #FFE6F3;
+            border: 5px solid #FFC7E6;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 85%;
+            max-width: 400px;
+            margin-bottom: 30px;
+            text-align: center;
+            opacity: 0;
+            animation: fade-in 2s ease-in-out 1s forwards;
+        }
+        .text-box img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .text-box p {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+        a {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: #A459D1;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: 'Great Vibes', cursive;
+            z-index: 1000;
+        }
+        a:hover {
+            background-color: #8649B0;
+        }
+        #contador {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            font-family: 'Great Vibes', cursive;
+            color: #A459D1;
+        }
+        #surprise-btn {
+            background-color: #FF69B4;
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-family: 'Great Vibes', cursive;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #surprise-btn:hover {
+            background-color: #D14D8A;
+        }
+        #surprise-message {
+            display: none;
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #4A4A4A;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Animações */
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 15px #FFC7E6, 0 0 30px #A459D1, 0 0 45px #FFC7E6;
+            }
+            50% {
+                box-shadow: 0 0 30px #FFC7E6, 0 0 60px #A459D1, 0 0 90px #FFC7E6;
+            }
+        }
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Corações caindo */
+        .heart {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background-color: #FF69B4;
+            border-radius: 50%;
+            animation: fall 5s infinite;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .heart:before,
+        .heart:after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #FF69B4;
+            border-radius: 50%;
+        }
+        .heart:before {
+            top: -10px;
+            left: 0;
+        }
+        .heart:after {
+            top: 0;
+            left: -10px;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="princesa-e-o-sapo.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <h1>2 anos do nosso amor</h1>
+    <div class="text-box">
+        <img src="sua-foto.jpg" alt="Foto do casal">
+        <p>
+            Eu fico pensando em como o tempo passou tão rápido. Parece que foi ontem que nos conhecemos, mas ao mesmo tempo, sinto que você esteve ao meu lado desde sempre. A cada dia que passa, meu amor por você só cresce. É como se o universo tivesse planejado tudo para que a gente se encontrasse, para que nossas almas se conectassem.
+        </p>
+        <p>
+            E aqui estamos, dois anos depois, construindo um amor que me faz sentir tão grato. Grato por você, por nós, por tudo o que já vivemos e por tudo que ainda está por vir. Amo você mais do que as palavras podem expressar.
+        </p>
+        <p id="contador"></p>
+        <button id="surprise-btn">Clique para uma mensagem especial</button>
+        <p id="surprise-message">Você é o maior presente da minha vida. Eu te amo com toda minha alma e coração!</p>
+    </div>
+    <a href="#">De Joaquim Cesar para o seu amor</a>
+
+    <script>
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+
+        setInterval(createHeart, 300);
+
+        // Contador de dias
+        function calcularDias() {
+            const inicioNamoro = new Date(2022, 11, 11); // Data do namoro
+            const hoje = new Date();
+            const diff = Math.floor((hoje - inicioNamoro) / (1000 * 60 * 60 * 24));
+            document.getElementById("contador").innerText = `Estamos juntos há ${diff} dias incríveis!`;
+        }
+
+        // Mostrar mensagem surpresa
+        document.getElementById("surprise-btn").addEventListener("click", () => {
+            document.getElementById("surprise-message").style.display = "block";
+        });
+
+        calcularDias();
+    </script>
+</body>
+</html>
